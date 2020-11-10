@@ -1,0 +1,150 @@
+@import "base/normalize";
+
+//Abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+//Base
+@import "base/base";
+@import "base/buttons";
+@import "base/logo";
+@import "base/icons";
+// @import "base/tags";
+// @import "base/hamburger";
+// @import "base/modal";
+
+//Layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/columns";
+@import "layouts/footer";
+
+
+@import "components/navigation";
+@import "components/promo";
+@import "components/partners";
+
+
+.logo-line__text {
+    color: #2D3348;
+    margin-bottom: 11px;
+}
+
+.item-info {
+    display: flex;
+    margin-right: 48px;
+    &__text {
+        margin-left: 20px;
+    }
+}
+
+.info-line {
+    display: flex;
+    margin-bottom: 24px;
+    &__text {
+        @include font($size: 1.6rem, $height: 3.2rem, $weight: 400);
+        margin: 0 24px;
+    }
+    &__figure {
+        border: 3px solid #DFE4EC;
+        border-radius: 3px;
+        flex: none;
+        order: 0;
+        align-self: center;
+        flex-grow: 0;
+        position: static;
+        width: 59px;
+        height: 0px;
+        left: 0px;
+        top: 16px;
+    }
+}
+
+.block {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 48px rgba(17, 56, 86, 0.2);
+    border-radius: 12px;
+}
+
+.feature {
+    max-width: 276px;
+    margin: 0 36px 36px 0;
+    &__wrapper {
+        padding: 24px 36px 60px;
+    }
+    &__icon {
+        margin: 24px 0;
+    }
+}
+
+.features {
+    position: relative;
+    &__image {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.features__wrapper {
+    margin-bottom: 120px;
+}
+
+.articles {
+    &__image-aero {
+        position: absolute;
+        z-index: 1;
+        right: -100px;
+        top: 70px;
+    }
+    &__image-square {
+        position: absolute;
+        z-index: -1;
+        right: -240px;
+        top: -50px;
+    }
+}
+
+.articles__wrapper {
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.article__wrapper {
+    padding: 60px 230px 60px 72px;
+}
+
+.wrapper {
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    &__text {
+        @include font($size: 1.8rem, $height: 3.2rem, $weight: 400);
+        margin: 24px 0;
+    }
+    &__title {
+        margin: 24px 0;
+    }
+    &__short-description {
+        color: $color-additional;
+    }
+}
+
+
+.number {
+    @include font($size: 2.4rem, $height: 3.6rem, $weight: 400);
+    margin-top: 0;
+}
+
+.email {
+    @include font($size: 1.8rem, $height: 3.6rem, $weight: 400);
+    margin-top: 0;
+}
+
+.app-badges__google {
+    margin-left: 20px;
+}

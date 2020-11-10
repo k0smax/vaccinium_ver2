@@ -1,0 +1,21 @@
+.button {
+    border-radius: 4px;
+    &_colored {
+        color: white;
+        background-color: $color-violet;
+        border: 1px solid $color-violet;
+        padding: 18px 140px;
+    }
+    &_colored-2 {
+        color: white;
+        background-color: $color-green;
+        border: 1px solid $color-green;
+        padding: 18px 36px;
+    }
+    &_translucent {
+        color: $color-additional;
+        background-color: transparent;
+        border: 1px solid #667695;
+        padding: 18px 50px;
+    }
+}

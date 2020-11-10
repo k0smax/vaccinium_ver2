@@ -1,0 +1,26 @@
+html {
+    background-color: #F2F4F9;;
+    color: $color-primary;
+    font-size: 10px;
+}
+
+body {
+    @extend %font-prim;
+    @include font($size: 1.4rem, $height:2.4rem, $weight: 400);
+}
+
+h1 {
+    @include font($height: 7.2rem, $size: 6.0rem);
+}
+
+h3 {
+    @include font($height: 4.4rem, $size: 3.6rem, $weight: 600);
+}
+
+h4 {
+    @include font($height: 3.0rem, $size: 1.8rem, $weight: 600);
+}
+
+a {
+    text-decoration: none;
+}
